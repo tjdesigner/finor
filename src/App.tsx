@@ -32,7 +32,10 @@ export function App() {
 
   return (
     <TransactionsProvider>
-      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
+      <Header
+        onOpenNewTransactionModal={handleOpenNewTransactionModal}
+        isMobile={IS_MOBILE}
+      />
       <Dashboard />
       <NewTransactionModal isOpen={isNewTransactionModalOpen} onRequestCLose={handleCloseNewTransactionModal} />
       <GlobalStyle />
