@@ -16,7 +16,13 @@ export const Content = styled.header`
         max-width: 140px;
     }
 
-    button {
+    div {
+        display: flex;
+        gap: 1rem;
+    }
+
+    button,
+    a {
         font-size: 1rem;
         color: #fff;
         background: var(--blue-light);
@@ -25,6 +31,10 @@ export const Content = styled.header`
         border-radius: .25rem;
         height: 3rem;
         transition: 0.2s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
             filter: brightness(0.9);
