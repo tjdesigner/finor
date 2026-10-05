@@ -26,17 +26,13 @@ export function App() {
     setIsNewTransactionModalOpen(true);
   }
 
-  function handleOpenNewTransactionModal() {
-    setIsNewTransactionModalOpen(true);
-  }
-
   function handleCloseNewTransactionModal() {
     setIsNewTransactionModalOpen(false);
   }
 
   return (
     <TransactionsProvider>
-      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} onOpenApp={href="viajeguanabara://"} />
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTransactionModal isOpen={isNewTransactionModalOpen} onRequestCLose={handleCloseNewTransactionModal} />
       <GlobalStyle />
