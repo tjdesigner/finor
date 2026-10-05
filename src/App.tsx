@@ -26,6 +26,9 @@ export function App() {
     setIsNewTransactionModalOpen(true);
   }
 
+  function handleOpenNewTransactionModal() {
+    setIsNewTransactionModalOpen(true);
+  }
 
   function handleCloseNewTransactionModal() {
     setIsNewTransactionModalOpen(false);
@@ -33,7 +36,7 @@ export function App() {
 
   return (
     <TransactionsProvider>
-      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} openApp={href="viajeguanabara://"} />
       <Dashboard />
       <NewTransactionModal isOpen={isNewTransactionModalOpen} onRequestCLose={handleCloseNewTransactionModal} />
       <GlobalStyle />
