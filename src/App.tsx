@@ -36,7 +36,7 @@ export function App() {
 
   return (
     <TransactionsProvider>
-      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} openApp={href="viajeguanabara://"} />
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} onOpenApp={href="viajeguanabara://"} />
       <Dashboard />
       <NewTransactionModal isOpen={isNewTransactionModalOpen} onRequestCLose={handleCloseNewTransactionModal} />
       <GlobalStyle />
